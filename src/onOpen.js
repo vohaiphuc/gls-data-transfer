@@ -1,0 +1,16 @@
+function onOpen() {
+  const ui = SpreadsheetApp.getUi()
+  const menu1min = ui.createMenu("1 Phút")
+    .addItem("Chạy ngay", "lastModified1min")
+    .addItem("Tạo", "createTrigger1min")
+    .addItem("Xóa", "deleteTrigger1min")
+  const menu5min = ui.createMenu("5 Phút")
+    .addItem("Tạo", "createTrigger")
+    .addItem("Xóa", "deleteTrigger")
+  ui.createMenu("Nâng Cao")
+    .addSubMenu(menu1min)
+    .addItem("Check JOB", "checkJobComplete")
+    .addItem("Delay", "delayRefresh")
+    .addItem("Stop Delay", "deleteTrigger5minDelay")
+    .addToUi()
+}

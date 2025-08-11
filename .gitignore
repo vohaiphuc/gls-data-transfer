@@ -1,0 +1,68 @@
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore node.js dependencies
+/node_modules
+npm-debug.log*
+yarn-error.log
+.pnpm-debug.log*
+
+# Ignore Python files
+*.pyc
+*.pyo
+__pycache__/
+*.env
+
+# Ignore build outputs
+dist/
+build/
+out/
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.swp
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+*.backup
+
+# Ignore Git-related files
+*.orig
+*.rej
+
+# Ignore package managers lock files if not needed
+# Uncomment only if you want to ignore them
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+.envrc
+
+# Ignore macOS Finder files
+*.DS_Store
+
+# Ignore coverage and test reports
+coverage/
+*.lcov
+
+# Ignore archives
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore system-specific files
+Desktop.ini
