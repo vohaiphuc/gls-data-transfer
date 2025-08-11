@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "clasp": "^1.0.0",
+    "nodemon": "^3.1.9"
+  },
+  "scripts": {
+    "build": "node pushAll.js",
+    "pull": "node pullAll.js",
+    "common": "node cloneCommon.js",
+    "start": "npx nodemon src/_common/main.js",
+    "test": "parcel build ./src/_common/main.js --dist-dir ./src/dist --no-source-maps"
+  }
+}
